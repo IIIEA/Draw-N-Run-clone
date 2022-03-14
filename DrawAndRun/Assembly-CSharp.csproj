@@ -59,6 +59,7 @@
     <Compile Include="Assets\Dreamteck\Splines\Core\Primitives\Capsule.cs" />
     <Compile Include="Assets\Dreamteck\Splines\Components\LengthCalculator.cs" />
     <Compile Include="Assets\Dreamteck\Splines\Components\SplineTracer.cs" />
+    <Compile Include="Assets\Scripts\Spawner.cs" />
     <Compile Include="Assets\NULLcode Studio\Shapes (beta)\Scripts\ShapeControl.cs" />
     <Compile Include="Assets\Dreamteck\Splines\Examples\Projection\Scripts\BallCamera.cs" />
     <Compile Include="Assets\Dreamteck\Splines\Core\Primitives\Rectangle.cs" />
@@ -66,6 +67,7 @@
     <Compile Include="Assets\Dreamteck\Splines\Core\Primitives\Ngon.cs" />
     <Compile Include="Assets\Dreamteck\Splines\Components\Node.cs" />
     <Compile Include="Assets\Dreamteck\Splines\Core\SampleCollection.cs" />
+    <Compile Include="Assets\Scripts\Coin.cs" />
     <Compile Include="Assets\Dreamteck\Splines\Components\SplineMesh.cs" />
     <Compile Include="Assets\Dreamteck\Splines\Components\Sample Modifiers\SizeModifier.cs" />
     <Compile Include="Assets\Dreamteck\Splines\Components\PolygonColliderGenerator.cs" />
@@ -92,6 +94,7 @@
     <Compile Include="Assets\Dreamteck\Splines\Core\ObjectSequence.cs" />
     <Compile Include="Assets\Dreamteck\Splines\Components\SplineProjector.cs" />
     <Compile Include="Assets\Dreamteck\Utilities\ResourceUtility.cs" />
+    <Compile Include="Assets\Scripts\ObstacleSpawner.cs" />
     <Compile Include="Assets\Dreamteck\Splines\Examples\Projection\Scripts\AddForceAlongPath.cs" />
     <Compile Include="Assets\Dreamteck\Splines\Core\Primitives\SplinePrimitive.cs" />
     <Compile Include="Assets\Dreamteck\Splines\Components\Sample Modifiers\RotationModifier.cs" />
@@ -100,13 +103,17 @@
     <Compile Include="Assets\Dreamteck\Splines\Core\SplineTrigger.cs" />
     <Compile Include="Assets\Dreamteck\Splines\Components\EdgeColliderGenerator.cs" />
     <Compile Include="Assets\Dreamteck\Splines\Examples\Junctions\Scripts\TrainEngine.cs" />
+    <Compile Include="Assets\Scripts\PlayerSpawnHandler.cs" />
+    <Compile Include="Assets\Scripts\Obstacle.cs" />
     <Compile Include="Assets\Scripts\GridSpawnPoints.cs" />
     <Compile Include="Assets\Dreamteck\Splines\Core\SplineSample.cs" />
     <Compile Include="Assets\Dreamteck\Splines\Components\ObjectController.cs" />
     <Compile Include="Assets\Dreamteck\Splines\Components\BlankUser.cs" />
     <Compile Include="Assets\Dreamteck\Splines\Components\WaveformGenerator.cs" />
+    <Compile Include="Assets\Scripts\PathSpawnPoints.cs" />
     <Compile Include="Assets\Dreamteck\Utilities\ImageDB.cs" />
     <Compile Include="Assets\Dreamteck\Splines\Components\SplineFollower.cs" />
+    <Compile Include="Assets\Scripts\Score.cs" />
     <Compile Include="Assets\Scripts\UI\SC_CursorTrail.cs" />
     <Compile Include="Assets\Dreamteck\Splines\Examples\Junctions\Scripts\JunctionSwitch.cs" />
     <Compile Include="Assets\Dreamteck\Utilities\ScriptableObjectUtility.cs" />
@@ -118,6 +125,7 @@
     <Compile Include="Assets\Dreamteck\Utilities\SceneUtility.cs" />
     <Compile Include="Assets\Dreamteck\Splines\Components\SurfaceGenerator.cs" />
     <Compile Include="Assets\Dreamteck\Splines\Core\Primitives\RoundedRectangle.cs" />
+    <Compile Include="Assets\Scripts\Interfaces\IPickuble.cs" />
     <Compile Include="Assets\Dreamteck\Utilities\TransformUtility.cs" />
     <Compile Include="Assets\Dreamteck\Splines\Components\ParticleController.cs" />
     <Compile Include="Assets\Dreamteck\Splines\Core\TransformModule.cs" />
@@ -132,14 +140,7 @@
     <Compile Include="Assets\Dreamteck\Utilities\TS_Mesh.cs" />
     <Compile Include="Assets\Dreamteck\Splines\Examples\Following\Scripts\CameraSmoothRotation.cs" />
     <Compile Include="Assets\Dreamteck\Splines\Core\Spline.cs" />
-    <Compile Include="Assets\Scripts\Spawner.cs" />
-    <Compile Include="Assets\Scripts\PathSpawnPoints.cs" />
-    <Compile Include="Assets\Scripts\PlayerSpawnHandler.cs" />
-    <Compile Include="Assets\Scripts\ObstacleSpawner.cs" />
-    <Compile Include="Assets\Scripts\Obstacle.cs" />
-    <Compile Include="Assets\Scripts\Interfaces\IPickuble.cs" />
-    <Compile Include="Assets\Scripts\Coin.cs" />
-    <Compile Include="Assets\Scripts\Score.cs" />
+    <Compile Include="Assets\Scripts\Level.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Dreamteck\Splines\Examples\Projection\Instructions.txt" />

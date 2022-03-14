@@ -6,14 +6,19 @@ public class Spawner : MonoBehaviour
 {
     [SerializeField] private Player _player = null;
     [Space]
-    [SerializeField] private Vector3 m_Center = Vector3.zero;
-    [SerializeField] private Vector2 m_Size = Vector2.one;
+    [SerializeField] private Vector3 _center = Vector3.zero;
+    [SerializeField] private Vector2 _size = Vector2.one;
 
     [SerializeField] private DrawingHandler _drawingHandler = null;
 
     private Vector3[] _spawnPoints = new Vector3[0];
 
     private List<Player> _players = new List<Player>();
+
+    private void Start()
+    {
+        _center = gameObject.transform.position;
+    }
 
     private void OnDrawGizmos()
     {
@@ -26,8 +31,8 @@ public class Spawner : MonoBehaviour
 
         Gizmos.color = Color.green;
 
-        Vector3 size = new Vector3(m_Size.x, 0, m_Size.y);
-        Gizmos.DrawWireCube(m_Center, size);
+        Vector3 size = new Vector3(_size.x, 0, _size.y);
+        Gizmos.DrawWireCube(gameObject.transform.position, size);
 
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(ConvertPoint(new Vector2(0, 0)), 0.1f);
@@ -70,12 +75,12 @@ public class Spawner : MonoBehaviour
     {
         // bl, tl, tr, br;
 
-        Vector2 halfSize = m_Size * 0.5f;
+        Vector2 halfSize = _size * 0.5f;
 
-        corners[0] = m_Center + new Vector3(-halfSize.x, 0, -halfSize.y);
-        corners[1] = m_Center + new Vector3(-halfSize.x, 0, halfSize.y);
-        corners[2] = m_Center + new Vector3(halfSize.x, 0, halfSize.y);
-        corners[3] = m_Center + new Vector3(halfSize.x, 0, -halfSize.y);
+        corners[0] = _center + new Vector3(-halfSize.x, 0, -halfSize.y);
+        corners[1] = _center + new Vector3(-halfSize.x, 0, halfSize.y);
+        corners[2] = _center + new Vector3(halfSize.x, 0, halfSize.y);
+        corners[3] = _center + new Vector3(halfSize.x, 0, -halfSize.y);
     }
 
     private Vector3 ConvertPoint(Vector2 point01)
